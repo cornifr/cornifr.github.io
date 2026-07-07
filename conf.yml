@@ -1,7 +1,6 @@
 appConfig:
   theme: glass
   language: en
-  showPagesMenu: true
 pageInfo:
   title: Cornifr
   description: Welcome!
@@ -10,34 +9,31 @@ pageInfo:
       path: https://github.com/Lissy93/dashy
     - title: Documentation
       path: https://dashy.to/docs
-sections: []
-pages:
-  - name: Software
-    sections:
-      - name: Ronald Jack Pro
-        icon: ico/ronald-jack-pro.ico
-        items:
-          - title: Mediafire
-            url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
-            target: newtab
-          - title: Google Drive
-            url: https://drive.google.com/file/d/1HdHkiNQiesr2rirkOASlfh5pCjAuJf3o/view?usp=sharing
-            target: newtab
-      - name: Wise Eye On 39
-        icon: ico/wise-eye-on-39.ico
-        items:
-          - title: Mediafire
-            url: https://www.mediafire.com/
-            target: newtab
-          - title: Google Drive
-            url: https://drive.google.com/file/d/1IGpMLmhDqw-8cdHMULNt7yD3pCgXXM8P/view?usp=sharing
-            target: newtab
-      - name: Mitaco5 v2
-        icon: ico/ronald-jack-pro.ico
-        items:
-          - title: Mediafire
-            url: https://www.mediafire.com/
-            target: newtab
-          - title: Google Drive
-            url: https://drive.google.com/file/d/1EKigCZoz3oE0h3_hLkBNWAiILMqpXsCE/view?usp=sharing
-            target: newtab
+sections:
+  - name: Ronald Jack Pro
+    icon: ico/ronald-jack-pro.ico
+    items:
+      - title: Mediafire
+        url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
+        target: newtab
+      - title: Google Drive
+        url: https://drive.google.com/file/d/1HdHkiNQiesr2rirkOASlfh5pCjAuJf3o/view?usp=sharing
+        target: newtab
+  - name: Wise Eye On 39
+    icon: ico/wise-eye-on-39.ico
+    items:
+      - title: Mediafire
+        url: https://www.mediafire.com/
+        target: newtab
+      - title: Google Drive
+        url: https://drive.google.com/file/d/1IGpMLmhDqw-8cdHMULNt7yD3pCgXXM8P/view?usp=sharing
+        target: newtab
+  - name: Mitaco5 v2
+    icon: ico/ronald-jack-pro.ico
+    items:
+      - title: Mediafire
+        url: https://www.mediafire.com/
+        target: newtab
+      - title: Google Drive
+        url: https://drive.google.com/file/d/1EKigCZoz3oE0h3_hLkBNWAiILMqpXsCE/view?usp=sharing
+        target: newtab
