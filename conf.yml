@@ -77,7 +77,7 @@ sections:
     displayData:
       sectionLayout: grid
       itemCountX: 4
-    icon: mitaco5-v2.png
+    icon: mitaco-5-v2.png
     items:
       - title: Mediafire
         url: https://www.mediafire.com/file/tp1vo9iecien7t3/Mitaco5_v2.zip/file
