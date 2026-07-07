@@ -2,19 +2,41 @@ appConfig:
   theme: colorful
   language: en
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Cornifr
+  description: Welcome!
   navLinks:
     - title: GitHub
       path: https://github.com/Lissy93/dashy
     - title: Documentation
       path: https://dashy.to/docs
-sections:
-  - name: Ronald Jack Pro
-    items:
-      - title: Software - Mediafire
+sections: []
+pages:
+  - name: Software
+    sections:
+      - name: Ronald Jack Pro
         icon: ico/ronald-jack-pro.ico
-        url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
-        target: newtab
-        id: 0_1354_softwaremediafire
-pages: []
+        items:
+          - title: Mediafire
+            url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
+            target: newtab
+          - title: Google Drive
+            url: https://drive.google.com/
+            target: newtab
+      - name: Wise Eye On 39
+        icon: ico/wise-eye-on-39.ico
+        items:
+          - title: Mediafire
+            url: https://www.mediafire.com/
+            target: newtab
+          - title: Google Drive
+            url: https://drive.google.com/
+            target: newtab
+      - name: TiCOH
+        icon: ico/ronald-jack-pro.ico
+        items:
+          - title: Mediafire
+            url: https://www.mediafire.com/
+            target: newtab
+          - title: Google Drive
+            url: https://drive.google.com/
+            target: newtab
