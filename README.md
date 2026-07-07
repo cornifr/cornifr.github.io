@@ -1,4 +1,4 @@
-# CorniFR Dashboard
+# Cornifr Dashboard
 
 Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.io) via GitHub Pages (`main` branch, `/docs` folder).
 
