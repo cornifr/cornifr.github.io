@@ -15,26 +15,53 @@ sections:
     icon: ronald-jack-pro.png
     items:
       - title: Mediafire
-        url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
+        url: https://www.mediafire.com/file/y0b7sg4o2v8dut8/RonaldJackPro_Access_260625.zip/file
         target: newtab
+        color: '#007bff'
+        icon: fas fa-cloud-download-alt
+      - title: Dropbox
+        url: https://www.dropbox.com/scl/fi/u2tp6wszrqc9thpx34njj/RonaldJackPro_Access_260625.zip?rlkey=fztuzn9s0pt0zgkfng8rtjd3h&st=umuvkipz&dl=0
+        target: newtab
+        color: '#0061ff'
+        icon: fab fa-dropbox
       - title: Google Drive
         url: https://drive.google.com/file/d/1HdHkiNQiesr2rirkOASlfh5pCjAuJf3o/view?usp=sharing
         target: newtab
+        color: '#34a853'
+        icon: fab fa-google-drive
   - name: Wise Eye On 39
     icon: wise-eye-on-39.png
     items:
       - title: Mediafire
-        url: https://www.mediafire.com/
+        url: https://www.mediafire.com/file/cnajyp4llrpdj6v/WiseEyeOn39.zip/file
         target: newtab
+        color: '#007bff'
+        icon: fas fa-cloud-download-alt
+      - title: Dropbox
+        url: https://www.dropbox.com/scl/fi/j9rem5o0wvfc48o542ary/WiseEyeOn39.zip?rlkey=jebkly4m8lx3cl0elr71uwsvj&st=nc9grm20&dl=0
+        target: newtab
+        color: '#0061ff'
+        icon: fab fa-dropbox
       - title: Google Drive
         url: https://drive.google.com/file/d/1IGpMLmhDqw-8cdHMULNt7yD3pCgXXM8P/view?usp=sharing
         target: newtab
+        color: '#34a853'
+        icon: fab fa-google-drive
   - name: Mitaco5 v2
     icon: ronald-jack-pro.png
     items:
       - title: Mediafire
-        url: https://www.mediafire.com/
+        url: https://www.mediafire.com/file/tp1vo9iecien7t3/Mitaco5_v2.zip/file
         target: newtab
+        color: '#007bff'
+        icon: fas fa-cloud-download-alt
+      - title: Dropbox
+        url: https://www.dropbox.com/scl/fi/z0b6dvl5zhrop7uqp99sl/Mitaco5_v2.zip?rlkey=ucnhw7anzsn2ucoy06bjk2cqn&st=mcgxropl&dl=0
+        target: newtab
+        color: '#0061ff'
+        icon: fab fa-dropbox
       - title: Google Drive
         url: https://drive.google.com/file/d/1EKigCZoz3oE0h3_hLkBNWAiILMqpXsCE/view?usp=sharing
         target: newtab
+        color: '#34a853'
+        icon: fab fa-google-drive
