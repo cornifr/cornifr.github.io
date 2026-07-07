@@ -1,17 +1,27 @@
 appConfig:
   theme: glass
-  language: en
+  iconSize: large
+  customCss: 'form.minimal { display: none !important; } .minimal-buttons { display: none !important; }'
+  hideComponents:
+    hideSearch: true
+    hideSettings: true
+  disableConfigurationForNonAdmin: true
+  startingView: minimal
+  auth:
+    enableGuestAccess: true
+    users:
+      - user: timuela
+        hash: e86f78a8a3caf0b60d8e74e5942aa6d86dc150cd3c03338aef25b7d2d7e3acc7
+        type: admin
 pageInfo:
-  title: CorniFR Dashboard
-  description: Personal links & software dashboard
-  logo: https://dashy.to/img/dashy.png
-  navLinks:
-    - title: GitHub
-      path: https://github.com/cornifr
-    - title: Dashy Docs
-      path: https://dashy.to/docs
+  title: Cornifr
+  description: Personal links & software
+  logo: cornifer.png
 sections:
   - name: Ronald Jack Pro
+    displayData:
+      sectionLayout: grid
+      itemCountX: 4
     icon: ronald-jack-pro.png
     items:
       - title: Mediafire
@@ -29,7 +39,17 @@ sections:
         target: newtab
         color: '#34a853'
         icon: fab fa-google-drive
+
+      - title: Youtube
+        url: https://www.youtube.com/watch?v=A4q6XJD-hXg
+        target: newtab
+        color: '#ff0000'
+        icon: fab fa-youtube
+
   - name: Wise Eye On 39
+    displayData:
+      sectionLayout: grid
+      itemCountX: 4
     icon: wise-eye-on-39.png
     items:
       - title: Mediafire
@@ -47,7 +67,16 @@ sections:
         target: newtab
         color: '#34a853'
         icon: fab fa-google-drive
+      - title: Youtube
+        url: https://www.youtube.com/watch?v=ECQ1ck0TLTk
+        target: newtab
+        color: '#ff0000'
+        icon: fab fa-youtube
+
   - name: Mitaco5 v2
+    displayData:
+      sectionLayout: grid
+      itemCountX: 4
     icon: ronald-jack-pro.png
     items:
       - title: Mediafire
