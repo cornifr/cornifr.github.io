@@ -16,7 +16,7 @@ appConfig:
 pageInfo:
   title: Cornifr
   description: Personal links & software
-  logo: cornifer.png
+  logo: web-icons/cornifer.png
 sections:
   - name: Ronald Jack Pro
     displayData:
@@ -77,7 +77,7 @@ sections:
     displayData:
       sectionLayout: grid
       itemCountX: 4
-    icon: ronald-jack-pro.png
+    icon: mitaco5-0.png
     items:
       - title: Mediafire
         url: https://www.mediafire.com/file/tp1vo9iecien7t3/Mitaco5_v2.zip/file
