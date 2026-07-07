@@ -5,30 +5,30 @@ Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.
 ## Files
 
 | File/Dir | Purpose |
-|----------|---------|
-| `conf.yml` | Dashy config — sections, links, theme |
-| `item-icons/` | Custom local icons referenced in `conf.yml` |
+|---|---|
+| `conf.yml` | Source config — sections, links, theme, etc. |
+| `item-icons/` | Custom local icons for section tiles |
 | `docs/` | Built static site served by GitHub Pages |
 
 ## How to update
 
-1. Edit `conf.yml` and/or add icons to `item-icons/`
-2. Copy config and icons into the Dashy source:
+1. Edit `conf.yml` directly (source of truth)
+2. Copy into dashy source:
    ```
-   copy conf.yml dashy-src\user-data\conf.yml /Y
-   xcopy /e /y item-icons dashy-src\public\item-icons\
+   Copy-Item conf.yml dashy-src\user-data\conf.yml
    ```
 3. Rebuild Dashy:
    ```
    cd dashy-src && yarn build && cd ..
    ```
-4. Replace the `docs/` folder with the fresh build:
+4. Replace `docs/` with fresh build:
    ```
-   rmdir /s /q docs && xcopy /e /i /y dashy-src\dist docs
+   Remove-Item docs -Recurse -Force
+   Copy-Item dashy-src\dist docs -Recurse
    ```
 5. Commit and push:
    ```
-   git add docs && git commit -m "Update dashboard" && git push
+   git add docs conf.yml && git commit -m "Update dashboard" && git push
    ```
 
 ## Initial setup (already done)
@@ -37,6 +37,27 @@ Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.
 git clone --depth 1 https://github.com/Lissy93/dashy.git dashy-src
 cd dashy-src && yarn install && cd ..
 ```
+
+After clone, apply the minimal-view logo patch. Open `dashy-src/src/views/Minimal.vue`, find the `<h1>` inside `.title-and-search` and add the logo `<img>` tag before `{{ pageInfo.title }}`:
+
+```html
+<h1>
+  <img v-if="pageInfo.logo" :src="pageInfo.logo" class="page-logo" alt="" />
+  {{ pageInfo.title }}
+</h1>
+```
+
+Then add the CSS below the `h1` block in the `<style>` section:
+
+```css
+.page-logo {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
+```
+
+Also add `display: flex; align-items: center; justify-content: center; gap: 0.5rem;` to the `h1` rule.
 
 ## Local preview
 
