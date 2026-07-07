@@ -1,59 +1,19 @@
+appConfig:
+  theme: colorful
+  language: en
 pageInfo:
-  title: Cornifr Dashboard
-  description: My personal links and bookmarks
+  title: Dashy
+  description: Welcome to your new dashboard!
   navLinks:
     - title: GitHub
-      path: https://github.com
-    - title: Docs
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
       path: https://dashy.to/docs
-  footerText: ""
-
-appConfig:
-  theme: dracula
-  layout: auto
-  iconSize: medium
-  language: en
-  webSearch:
-    enable: true
-    searchEngine: duckduckgo
-
 sections:
-  - name: Quick Links
-    icon: fas fa-link
-    displayData:
-      sortBy: default
-      cols: 2
-      rows: 2
+  - name: Ronald Jack Pro
     items:
-      - title: GitHub
-        description: Where the world builds software
-        url: https://github.com
-        icon: fab fa-github
-      - title: Reddit
-        description: The front page of the internet
-        url: https://reddit.com
-        icon: fab fa-reddit
-      - title: YouTube
-        description: Watch and share videos
-        url: https://youtube.com
-        icon: fab fa-youtube
-
-  - name: Dev Tools
-    icon: fas fa-code
-    displayData:
-      sortBy: default
-      cols: 2
-      rows: 2
-    items:
-      - title: Stack Overflow
-        description: Developer Q&A
-        url: https://stackoverflow.com
-        icon: fab fa-stack-overflow
-      - title: DevDocs
-        description: API documentation browser
-        url: https://devdocs.io
-        icon: fas fa-book
-      - title: CodePen
-        description: Online code editor
-        url: https://codepen.io
-        icon: fab fa-codepen
+      - title: Software - Mediafire
+        url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
+        target: newtab
+        id: temp_Software - Mediafire
+pages: []
