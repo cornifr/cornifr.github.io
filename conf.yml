@@ -1,5 +1,5 @@
 appConfig:
-  theme: colorful
+  theme: glass
   language: en
 pageInfo:
   title: Cornifr
@@ -20,7 +20,7 @@ pages:
             url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
             target: newtab
           - title: Google Drive
-            url: https://drive.google.com/
+            url: https://drive.google.com/file/d/1HdHkiNQiesr2rirkOASlfh5pCjAuJf3o/view?usp=sharing
             target: newtab
       - name: Wise Eye On 39
         icon: ico/wise-eye-on-39.ico
@@ -29,14 +29,14 @@ pages:
             url: https://www.mediafire.com/
             target: newtab
           - title: Google Drive
-            url: https://drive.google.com/
+            url: https://drive.google.com/file/d/1IGpMLmhDqw-8cdHMULNt7yD3pCgXXM8P/view?usp=sharing
             target: newtab
-      - name: TiCOH
+      - name: Mitaco5 v2
         icon: ico/ronald-jack-pro.ico
         items:
           - title: Mediafire
             url: https://www.mediafire.com/
             target: newtab
           - title: Google Drive
-            url: https://drive.google.com/
+            url: https://drive.google.com/file/d/1EKigCZoz3oE0h3_hLkBNWAiILMqpXsCE/view?usp=sharing
             target: newtab
