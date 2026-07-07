@@ -26,10 +26,7 @@ Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.
    Remove-Item docs -Recurse -Force
    Copy-Item dashy-src\dist docs -Recurse
    ```
-5. Commit and push:
-   ```
-   git add docs conf.yml && git commit -m "Update dashboard" && git push
-   ```
+5. Commit and push
 
 ## Initial setup (already done)
 
