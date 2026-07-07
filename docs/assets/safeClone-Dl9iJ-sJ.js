@@ -1,1 +1,0 @@
-import{T as n}from"./index-CKjfZ9Zl.js";function u(r,e=null){if(r==null)return e;try{return structuredClone(r)}catch{try{return JSON.parse(JSON.stringify(r))}catch(t){return n("safeClone failed",t),e??(Array.isArray(r)?[]:{})}}}export{u as s};
