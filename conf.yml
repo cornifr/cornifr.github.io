@@ -13,7 +13,8 @@ sections:
   - name: Ronald Jack Pro
     items:
       - title: Software - Mediafire
+        icon: ico/ronald-jack-pro.ico
         url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
         target: newtab
-        id: temp_Software - Mediafire
+        id: 0_1354_softwaremediafire
 pages: []
