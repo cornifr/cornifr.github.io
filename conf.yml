@@ -1,6 +1,7 @@
 appConfig:
   theme: glass
   language: en
+  showPagesMenu: true
 pageInfo:
   title: Cornifr
   description: Welcome!
