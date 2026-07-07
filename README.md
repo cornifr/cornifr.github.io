@@ -12,10 +12,11 @@ Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.
 
 ## How to update
 
-1. Edit `conf.yml` directly (source of truth)
+1. Edit `conf.yml` directly (source of truth) and/or add icons to `item-icons/`
 2. Copy into dashy source:
    ```
    Copy-Item conf.yml dashy-src\user-data\conf.yml
+   Copy-Item item-icons\* dashy-src\public\item-icons\ -Recurse
    ```
 3. Rebuild Dashy:
    ```
