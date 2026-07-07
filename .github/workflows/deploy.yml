@@ -1,0 +1,45 @@
+name: Deploy Dashy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout config repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Clone Dashy
+        run: git clone --depth 1 https://github.com/Lissy93/dashy.git dashy-src
+
+      - name: Copy custom assets
+        run: |
+          cp conf.yml dashy-src/user-data/conf.yml
+          if [ -d item-icons ]; then cp -r item-icons dashy-src/user-data/; fi
+
+      - name: Install dependencies
+        working-directory: dashy-src
+        run: yarn install --frozen-lockfile
+
+      - name: Build Dashy
+        working-directory: dashy-src
+        run: yarn build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dashy-src/dist
+          publish_branch: gh-pages

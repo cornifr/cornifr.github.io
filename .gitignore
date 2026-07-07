@@ -1,1 +1,4 @@
-.commandcode/
+.commandcode
+node_modules/
+dashy-src/
+dist/
