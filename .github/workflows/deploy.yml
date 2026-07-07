@@ -38,6 +38,12 @@ jobs:
       - name: Copy config
         run: cp conf.yml dashy/public/conf.yml
 
+      - name: Copy custom icons
+        run: cp -r ico dashy/public/ico
+
+      - name: Verify config
+        run: cat dashy/public/conf.yml
+
       - name: Install dependencies
         working-directory: dashy
         run: yarn install --immutable
