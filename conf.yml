@@ -12,7 +12,7 @@ pageInfo:
       path: https://dashy.to/docs
 sections:
   - name: Ronald Jack Pro
-    icon: ../../ico/ronald-jack-pro.png
+    icon: ronald-jack-pro.png
     items:
       - title: Mediafire
         url: https://www.mediafire.com/file/hbfazba38bzy52f/Phan_mem_RonaldJackPro_Access_260625.zip/file
@@ -21,7 +21,7 @@ sections:
         url: https://drive.google.com/file/d/1HdHkiNQiesr2rirkOASlfh5pCjAuJf3o/view?usp=sharing
         target: newtab
   - name: Wise Eye On 39
-    icon: ../../ico/wise-eye-on-39.png
+    icon: wise-eye-on-39.png
     items:
       - title: Mediafire
         url: https://www.mediafire.com/
@@ -30,7 +30,7 @@ sections:
         url: https://drive.google.com/file/d/1IGpMLmhDqw-8cdHMULNt7yD3pCgXXM8P/view?usp=sharing
         target: newtab
   - name: Mitaco5 v2
-    icon: ../../ico/ronald-jack-pro.png
+    icon: ronald-jack-pro.png
     items:
       - title: Mediafire
         url: https://www.mediafire.com/
