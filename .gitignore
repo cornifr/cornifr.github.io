@@ -2,9 +2,6 @@
 node_modules/
 dashy-src/
 
-# Dashy config backups
-user-data/config-backups/
-
 # local env files
 .env.local
 .env.*.local
