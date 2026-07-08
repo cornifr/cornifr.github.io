@@ -14,9 +14,8 @@ Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.
 
 1. Edit `conf.yml` and/or add icons to `item-icons/`
 2. Run the build script:
-   ```
-   ./build.ps1
-   ```
+   Windows: `./build.ps1`
+   Linux/macOS: `./build.sh`
 3. Commit and push:
    ```
    git add docs conf.yml item-icons && git commit -m "Update dashboard" && git push
