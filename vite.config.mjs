@@ -35,7 +35,7 @@ function copyUserDataConfig() {
   return {
     name: 'copy-user-data-config',
     closeBundle() {
-      const outDir = path.resolve(__dirname, 'dist');
+      const outDir = path.resolve(__dirname, 'docs');
       if (!existsSync(userDataDir)) return;
       const ymlFiles = readdirSync(userDataDir).filter(f => f.endsWith('.yml') || f.endsWith('.yaml'));
       for (const file of ymlFiles) {
@@ -125,7 +125,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     chunkSizeWarningLimit: 7000,
   },
 
