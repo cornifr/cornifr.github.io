@@ -1,58 +1,42 @@
 # Cornifr Dashboard
 
-Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.io) via GitHub Pages (`main` branch, `/docs` folder).
+Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.io) via GitHub Pages (`main` branch, `/dist` folder).
 
 ## Files
 
 | File/Dir | Purpose |
 |---|---|
-| `conf.yml` | Source config — sections, links, theme, etc. |
-| `item-icons/` | Custom local icons for section tiles |
-| `docs/` | Built static site served by GitHub Pages |
+| `user-data/conf.yml` | Dashy config — sections, links, theme |
+| `public/item-icons/` | Custom section icons |
+| `public/web-icons/` | Custom web icons (logo, favicon) |
+| `src/` | Patched Dashy source (minimal view, router, App.vue) |
+| `dist/` | Built static site served by GitHub Pages |
+| `dashy-src/` | Original unpatched Dashy clone (for reference, gitignored) |
+
+## Source patches
+
+These files differ from upstream Dashy:
+- `src/views/Minimal.vue` — logo render in `<h1>`, ref guard on `finishedSearching()`
+- `src/router.js` — `/` route maps to `Minimal.vue`, no redirect
+- `src/App.vue` — hide `<Header>` on landing route
+- `src/components/MinimalView/MinimalSearch.vue` — `clearMinFilterInput()` proxy method
 
 ## How to update
 
-1. Edit `conf.yml` and/or add icons to `item-icons/`
-2. Run the build script:
+1. Edit `user-data/conf.yml` and/or add icons to `public/item-icons/`
+2. Build:
    Windows: `./build.ps1`
    Linux/macOS: `./build.sh`
 3. Commit and push:
    ```
-   git add docs conf.yml item-icons && git commit -m "Update dashboard" && git push
+   git add dist && git commit -m "Update dashboard" && git push
    ```
-
-## Initial setup (already done)
-
-```
-git clone --depth 1 https://github.com/Lissy93/dashy.git dashy-src
-cd dashy-src && yarn install && cd ..
-```
-
-After clone, apply the minimal-view logo patch. Open `dashy-src/src/views/Minimal.vue`, find the `<h1>` inside `.title-and-search` and add the logo `<img>` tag before `{{ pageInfo.title }}`:
-
-```html
-<h1>
-  <img v-if="pageInfo.logo" :src="pageInfo.logo" class="page-logo" alt="" />
-  {{ pageInfo.title }}
-</h1>
-```
-
-Then add the CSS below the `h1` block in the `<style>` section:
-
-```css
-.page-logo {
-  width: 5rem;
-  height: 5rem;
-  object-fit: contain;
-}
-```
-
-Also add `display: flex; align-items: center; justify-content: center; gap: 0.5rem;` to the `h1` rule.
 
 ## Local preview
 
 ```
-cd dashy-src && yarn dev
+yarn install   # first time only
+yarn dev
 ```
 
-Then open `http://localhost:8080`. Config lives at `dashy-src/user-data/conf.yml`.
+Then open `http://localhost:8080`.

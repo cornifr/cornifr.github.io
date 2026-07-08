@@ -1,1 +1,0 @@
-const e={"gluetun-status":{organization:"Organisation"},nextcloud:{"memory-utilisation":"memory utilisation"}},t={"app-info":{license:"Licence"},"theme-maker":{"reset-toast":"Custom Colours for {theme} Removed"},widgets:e};export{t as default,e as widgets};
