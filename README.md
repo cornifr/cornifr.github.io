@@ -12,26 +12,15 @@ Personal Dashy dashboard deployed at [cornifr.github.io](https://cornifr.github.
 
 ## How to update
 
-1. Edit `conf.yml` directly (source of truth) and/or add icons to `item-icons/`
-2. Copy into dashy source:
+1. Edit `conf.yml` and/or add icons to `item-icons/`
+2. Run the build script:
    ```
-   Copy-Item conf.yml dashy-src\user-data\conf.yml
-   Copy-Item item-icons\* dashy-src\public\item-icons\ -Recurse
+   ./build.ps1
    ```
-3. Rebuild Dashy:
+3. Commit and push:
    ```
-   cd dashy-src && yarn build && cd ..
+   git add docs conf.yml item-icons && git commit -m "Update dashboard" && git push
    ```
-4. Replace `docs/` with fresh build:
-   ```
-   Remove-Item docs -Recurse -Force
-   Copy-Item dashy-src\dist docs -Recurse
-   ```
-5. Commit and push:
-   ```
-   git add docs conf.yml && git commit -m "Update dashboard" && git push
-   ```
-noip
 
 ## Initial setup (already done)
 
