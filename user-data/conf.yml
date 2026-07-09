@@ -35,7 +35,7 @@ sections:
         color: '#0061ff'
         icon: fab fa-dropbox
       - title: Google Drive
-        url: https://drive.google.com/file/d/1HdHkiNQiesr2rirkOASlfh5pCjAuJf3o/view?usp=sharing
+        url: https://drive.google.com/file/d/1BVuEmtN0ph5pVIPa-8XK-h1j9wfMcDtf/view?usp=sharing
         target: newtab
         color: '#34a853'
         icon: fab fa-google-drive
